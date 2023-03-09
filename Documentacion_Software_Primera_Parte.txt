@@ -1,0 +1,195 @@
+Especificación de Requerimientos
+Descripción del Diseño
+
+
+
+
+
+
+
+
+
+ReposteriaControl
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Apellidos, Nombres	Correo electrónico	Rol
+Christian Gallo	cristiangallosc@utp.edu.co	Desarrollador de software, diseñador de bases de datos
+Jhonatan Alexis Bueno Pinzón	alexis.bueno@utp.edu.co	Desarrollador de software, analista de requerimientos, Tester de software
+		
+		
+		
+
+
+
+Fecha de presentación: 06/03/2023
+
+
+
+
+
+
+
+Contenido
+1	INTRODUCCIÓN	3
+1.1	PROPÓSITO	3
+1.2	ALCANCE O ÁMBITO DEL SISTEMA	3
+1.3	DEFINICIONES, ACRÓNIMOS Y ABREVIATURAS	3
+1.3.1	Definiciones	3
+1.3.2	Acrónimos	3
+1.3.3	Abreviaturas	3
+1.3.4	Referencias	4
+1.4	PERSPECTIVA GENERAL DEL DOCUMENTO	4
+2	DESCRIPCIÓN GENERAL DE LA APLICACIÓN	4
+2.1	PERSPECTIVA DE LA APLICACIÓN	4
+2.2	FUNCIONES DE LA APLICACIÓN	4
+2.3	CARACTERÍSTICAS DE LOS USUARIOS	5
+2.4	RESTRICCIONES	5
+2.5	SUPOSICIONES Y DEPENDENCIAS	5
+2.6	REQUERIMIENTOS DIFERIDOS	5
+
+
+
+
+
+
+ 
+1	INTRODUCCIÓN
+En esta sección se proporcionará una introducción a todo el documento de Especificación de Requisitos Software (ERS). El objetivo de este documento es establecer un conjunto de requisitos que describan el comportamiento y las funcionalidades del sistema que se va a desarrollar. El ERS es un documento fundamental para cualquier proyecto de desarrollo de software, ya que permite establecer una base común de entendimiento entre los desarrolladores, los clientes y los usuarios finales.
+En la sección de propósito se establecerá el objetivo principal del proyecto de desarrollo del software y se especificará la razón de su existencia. En la sección de ámbito del sistema se definirá el contexto en el que se va a desarrollar el software, estableciendo los límites y las restricciones que se aplicarán al sistema. En la sección de definiciones se establecerá un glosario de términos que se utilizarán en el documento, con el fin de evitar confusiones y ambigüedades en la interpretación de los requisitos.
+En la sección de referencias se establecerán los documentos de referencia que se utilizarán durante el desarrollo del proyecto, como pueden ser normas, estándares o especificaciones técnicas. Finalmente, en la sección de visión general del documento se proporcionará una descripción general del contenido del ERS, incluyendo las secciones que lo componen y el propósito de cada una de ellas.
+
+
+
+1.1	Propósito
+Este documento de Especificación de Requisitos de Software (ERS) tiene como objetivo establecer los requisitos funcionales y no funcionales para el desarrollo del sistema de gestión de inventarios “El Rincón del Dulce”. Este documento está dirigido a los desarrolladores de software, analistas de sistemas, administradores de proyecto, propietarios de negocios y cualquier otra persona involucrada en el proceso de desarrollo de software.
+El propósito principal de este documento es definir los requisitos del sistema de software “El Rincón del Dulce”, proporcionando una descripción completa de las funcionalidades y características requeridas, así como las restricciones, limitaciones y expectativas que se deben tener en cuenta durante el proceso de desarrollo. Este documento también servirá como una guía para el equipo de desarrollo de software, ayudándoles a mantenerse enfocados en los objetivos y metas del proyecto, y garantizando la calidad y eficiencia del proceso de desarrollo.
+Además, este documento servirá como un punto de referencia para la evaluación del sistema de software desarrollado, permitiendo a los usuarios y propietarios del negocio evaluar la adecuación del sistema a sus necesidades y requerimientos.
+
+
+
+1.2	Alcance o Ámbito del Sistema
+Nombre del Sistema
+El sistema que se va a desarrollar llevará el nombre de El Rincón del Dulce.
+
+Descripción del Sistema
+Desarrollar una aplicación para una repostería o panadería para llevar el control de inventario.
+La persona encargada podrá agregar materias primas y sus respectivas
+cantidades para así tener un control y conocimiento de lo que ingresa y
+lo que puede gastar. Lo principal a guardar serán materias primas como:
+Harina de trigo, azúcar, huevos, polvo para hornear, harina de maíz,
+mantequilla, galletas, etc.
+
+Funcionalidades del Sistema
+El Rincón del Dulce permitirá a los usuarios realizar las siguientes funcionalidades:
+Agregar materias primas y sus respectivas cantidades a la base de datos.
+Eliminar materias primas de la base de datos.
+Modificar las cantidades de las materias primas en la base de datos.
+Agregar productos terminados y sus respectivas recetas a la base de datos.
+Restar las cantidades de las materias primas utilizadas en la producción de productos terminados, teniendo en cuenta el porcentaje de "merma".
+Mostrar la cantidad actual de cada materia prima en la base de datos.
+Mostrar la lista de productos terminados disponibles en la base de datos.
+Actualizar automáticamente la cantidad de materias primas disponibles en la base de datos después de la producción de productos terminados.
+Generar informes de inventario para cada materia prima y producto terminado.
+Permitir a los usuarios con permisos apropiados acceder a la base de datos y modificar los registros.
+Proporcionar una interfaz fácil de usar e intuitiva para la entrada y edición de datos en la base de datos.
+Estas funcionalidades permitirán a la persona encargada tener un mejor control de las materias primas y productos terminados en la repostería o panadería, optimizando la producción y reduciendo costos. 
+
+Alcance del Sistema
+El sistema El Rincón del Dulce consiste en el desarrollo de un software para una repostería o panadería, la cual permitirá llevar el control de inventario de las materias primas utilizadas en la producción de productos terminados como tortas, postres, entre otros. La aplicación permitirá agregar materias primas y sus respectivas cantidades, así como eliminar y modificar las cantidades existentes en la base de datos. Además, se podrá agregar los productos terminados con sus respectivas recetas estandarizadas y se podrá restar las cantidades de materias primas utilizadas en su producción, teniendo en cuenta el porcentaje de merma que se aplica en la cocina.
+El sistema estará compuesto por dos interfaces de usuario: la primera permitirá agregar y modificar materias primas y sus cantidades, y la segunda permitirá agregar los productos terminados y sus respectivas recetas. El sistema se conectará a una base de datos para mantener un registro actualizado de las materias primas disponibles y de los productos terminados producidos.
+El alcance del sistema se limita a la gestión del inventario de las materias primas utilizadas en la producción de productos terminados, y no incluye la gestión de pedidos, facturación o gestión de clientes. Además, se deberá mantener la consistencia con otros documentos de nivel superior, como la especificación de requisitos globales del sistema, si existen. 
+
+Referencias a Documentos de Nivel Superior
+El sistema El Rincón del Dulce En cuanto a referencias a documentos de nivel superior, se deberá mantener la consistencia con otros documentos de ingeniería de sistemas que incluyen hardware y software. En particular, se deberá tener en cuenta la especificación de requisitos globales del sistema, si existe, para garantizar que el desarrollo del sistema de gestión de inventario de materias primas esté en línea con los objetivos y metas generales del sistema.
+Además, se recomienda mantener la coherencia con otros documentos de planificación y desarrollo de proyectos de software, como el plan de gestión de proyectos, el plan de pruebas, entre otros, para garantizar un enfoque sistemático y riguroso en el desarrollo del sistema y asegurar la calidad del software entregado.
+1.3	Definiciones, Acrónimos y Abreviaturas
+1.3.1	Definiciones
+
+Control de inventario: es el proceso de seguimiento y gestión de los materiales, suministros y productos de una empresa, con el objetivo de garantizar la disponibilidad de los mismos y evitar el exceso o la escasez.
+Materias primas: son los componentes básicos de los productos fabricados, en este caso, los ingredientes utilizados en la producción de pan y repostería, como harina, azúcar, huevos, etc.
+Interfaz: es el medio por el cual el usuario interactúa con el software, a través de una pantalla, teclado y/o ratón.
+Receta estandarizada: es una fórmula precisa y detallada que indica la cantidad de cada ingrediente necesario para producir un producto terminado.
+
+
+1.3.2	Acrónimos
+ERS: Especificación de Requisitos de Software.
+CRUD: acrónimo de "Crear, Leer, Actualizar y Borrar", que son las operaciones básicas de gestión de datos en una base de datos.
+
+1.3.3	Abreviaturas
+UI: abreviatura de "User Interface", o interfaz de usuario en español.
+QA: abreviatura de "Quality Assurance", o garantía de calidad en español.
+IT: abreviatura de "Information Technology", o tecnología de la información en español.
+
+1.3.4	Referencias
+En términos de desarrollo de software, se deben seguir los estándares y metodologías de desarrollo de software de calidad, como Agile o Waterfall, para garantizar un proceso de desarrollo de software estructurado y eficiente.
+Además, se pueden referenciar manuales de usuario o guías de usuario para asegurar que la interfaz de usuario sea intuitiva y fácil de usar para los usuarios finales.
+
+
+
+1.4	Perspectiva General del Documento
+Este documento de Especificación de Requisitos de Software (ERS) describe los requisitos funcionales y no funcionales para el desarrollo de una aplicación de control de inventario para una panadería o repostería. El sistema permitirá a la persona encargada de la gestión del inventario agregar, eliminar y modificar las materias primas utilizadas en la producción de productos horneados. Además, permitirá agregar los productos terminados y sus respectivas recetas, de manera que la persona podrá llevar un mejor control del consumo de materiales y de la optimización de la producción.
+Este documento se divide en varias secciones, comenzando por la introducción, que proporciona una descripción general del documento y su propósito. A continuación, se especifica el ámbito del sistema, incluyendo una descripción detallada de las funcionalidades que se espera que tenga el software, así como sus objetivos y metas. En la sección de definiciones, acrónimos y abreviaturas, se proporcionan definiciones importantes que se utilizarán a lo largo del documento.
+La sección de requisitos funcionales describe en detalle las funcionalidades específicas que se deben desarrollar en el software, mientras que la sección de requisitos no funcionales describe los criterios de calidad que el software debe cumplir. Finalmente, se incluye una sección de referencias, que especifica los documentos de nivel superior que deben considerarse en el desarrollo del software.
+
+
+
+2	DESCRIPCIÓN GENERAL DE LA APLICACIÓN
+El sistema a desarrollar es una aplicación para una repostería o panadería que permitirá llevar el control de inventario de las materias primas y productos terminados. La aplicación permitirá a la persona encargada agregar materias primas y sus respectivas cantidades, así como también modificarlas y eliminarlas para tener un control y conocimiento de lo que ingresa y lo que puede gastar. Se podrán guardar materias primas como harina de trigo, azúcar, huevos, polvo para hornear, harina de maíz, mantequilla, galletas, entre otras.
+La aplicación también contará con una interfaz para agregar los productos terminados, como tortas y postres, donde se ingresará la receta estandarizada. De esta manera, el sistema podrá restar las cantidades de materia prima que se utilizan, teniendo en cuenta el porcentaje de "merma" que se aplica en la cocina, lo que permitirá un mejor control de los materiales gastados y una optimización de la producción.
+El sistema constará de dos etapas: en la primera se creará la interfaz para agregar las materias primas, sus cantidades y se conectará a la base de datos. En la segunda etapa se creará la interfaz para agregar los productos terminados y sus respectivas recetas.
+En cuanto a su alcance, el sistema está enfocado en la gestión del inventario de una repostería o panadería, permitiendo un mejor control de los materiales gastados y una optimización de la producción. El sistema está dirigido a la persona encargada de la gestión del inventario en la empresa.
+
+
+
+2.1	Perspectiva de la Aplicación
+El sistema a desarrollar es una aplicación de software que se ejecutará en un entorno de escritorio en un ordenador personal. La aplicación permitirá al usuario llevar un control de inventario de las materias primas utilizadas en la repostería o panadería, así como de los productos terminados y sus respectivas recetas.
+
+
+2.2	Funciones de la Aplicación
+El sistema permitirá al usuario agregar, eliminar y modificar materias primas y sus respectivas cantidades, así como agregar productos terminados y sus recetas estandarizadas. Además, el sistema restará automáticamente las cantidades de materias primas utilizadas en la producción de cada producto terminado, teniendo en cuenta el porcentaje de "merma" que se aplica en la cocina
+2.3	Características de los Usuarios
+El sistema está destinado a ser utilizado por el personal encargado de llevar el control de inventario en la repostería o panadería, además el personal encargado deberá tener el conocimiento básico de informática y manejo de aplicaciones en línea, también deberá contar con la capacidad para ingresar datos precisos y realizar operaciones matemáticas simples. El personal encargado contará con un tiempo limitado para la capacitación en el uso del sistema.
+
+
+2.4	Restricciones
+Restricciones de hardware: el sistema requerirá de un equipo informático con ciertas características mínimas, como capacidad de almacenamiento, memoria RAM y velocidad de procesador.
+Restricciones de software: el sistema debe ser compatible con ciertos sistemas operativos y versiones de software, y se deberá garantizar la estabilidad y seguridad del mismo.
+Restricciones de acceso: el sistema debe tener restricciones de acceso para garantizar que solo el personal autorizado tenga acceso a la información y funcionalidades del sistema.
+Restricciones de tiempo: el sistema debe estar disponible en todo momento durante el horario de operaciones de la repostería, y se deberá garantizar la disponibilidad y continuidad del sistema en caso de fallas técnicas.
+Restricciones de presupuesto: el sistema debe ser desarrollado dentro de un presupuesto preestablecido y se deberá evitar sobrepasar los costos establecidos.
+Restricciones de compatibilidad: el sistema debe ser compatible con otros sistemas o herramientas utilizadas en la repostería, como la maquinaria de producción, los programas de diseño y las herramientas de marketing.
+Restricciones legales: el sistema debe cumplir con todas las regulaciones y leyes aplicables, incluyendo la protección de datos personales y la privacidad del cliente.
+
+
+
+2.5	Suposiciones y Dependencias
+Se supone que el equipo informático (computadoras, servidores, dispositivos de almacenamiento) es confiable y está en buenas condiciones para el funcionamiento del sistema.
+Se asume que los usuarios del sistema tienen conocimientos básicos de informática y son capaces de utilizar una interfaz de usuario intuitiva.
+Se supone que la conexión a internet es estable y está disponible en todo momento para que el sistema funcione correctamente.
+Se asume que las materias primas y los productos terminados se registran y manipulan con precisión por parte del personal encargado.
+Se depende de la disponibilidad y actualización de la información sobre las materias primas y los productos terminados en la base de datos para un correcto funcionamiento del sistema.
+Se supone que la persona encargada de ingresar la información al sistema tiene los permisos necesarios y autorizaciones para hacerlo.
+
+
+
+2.6	Requerimientos Diferidos
+En futuras versiones del sistema, se podrían agregar funciones adicionales, como la generación de informes y estadísticas sobre el uso de materias primas y la producción de productos terminados.
